@@ -8,9 +8,9 @@ cd /home/djiango/Ne10/projectNe10
 
 
 
-mkdir build && cd build
-
+#mkdir build && cd build
+cd build
 export NE10_LINUX_TARGET_ARCH=aarch64
-
 cmake -DCMAKE_TOOLCHAIN_FILE=/home/djiango/Ne10/projectNe10/GNUlinux_config.cmake ..
-make clean && make
+make
+#make clean && make
