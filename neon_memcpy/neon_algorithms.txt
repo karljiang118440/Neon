@@ -1,0 +1,17 @@
+
+
+PATH=${PATH}:/D/NXP/VisionSDK_S32V2_RTM_1_2_0/msys32/mingw32/bin:/D/NXP/VisionSDK_S32V2_RTM_1_2_0/compilers/gcc-6.3.1-linaro-Xarmv8-linux/i686-mingw32/bin:/D/NXP/VisionSDK_S32V2_RTM_1_2_0/compilers/gcc-6.3.1-linaro-Earmv8-eabi/i686-mingw32/bin:/D/NXP/VisionSDK_S32V2_RTM_1_2_0/compilers/gcc-6.3.1-linaro-Earmv7-eabi/i686-mingw32/bin:/D/NXP/APU_Compiler_v1.0/bin
+export ARCH=arm
+export CROSS_COMPILE=aarch64-linux-gnu-
+export APU_TOOLS=/D/NXP/APU_Compiler_v1.0
+
+
+
+cd /D/NXP/VisionSDK_S32V2_RTM_1_2_0/s32v234_sdk/demos/neon/neon_memcpy/build-v234ce-gnu-linux-d
+
+
+make clean && make -j4
+
+
+
+D/NXP/VisionSDK_S32V2_RTM_1_2_0/s32v234_sdk/3rdparty/ocv/cmake-v234ce-gnu-linux
