@@ -1,0 +1,37 @@
+
+
+
+#1、cmake 操作
+
+##1.1、cmake 相关
+
+cmake --version
+
+cmake-gui
+
+
+
+#2、
+
+
+https://github.com/projectNe10/Ne10/blob/master/doc/building.md
+
+cd $NE10_PATH                       # Change directory to the location of the Ne10 source
+mkdir build && cd build             # Create the `build` directory and navigate into it
+export NE10_LINUX_TARGET_ARCH=armv7 # Set the target architecture (can also be "aarch64")
+cmake -DGNULINUX_PLATFORM=ON ..     # Run CMake to generate the build files
+make 
+
+
+cd $NE10_PATH                       # Change directory to the location of the Ne10 source
+mkdir build && cd build             # Create the `build` directory and navigate into it
+export NE10_LINUX_TARGET_ARCH=armv8 # Set the target architecture (can also be "aarch64")
+cmake -DGNULINUX_PLATFORM=ON ..     # Run CMake to generate the build files
+make 
+
+
+#3、交叉编译工具指定
+
+指定工具选项为 cmake -DGNULINUX_PLATFORM=ON ..
+
+You are trying to compile for non-ARM (CMAKE_SYSTEM_PROCESSOR='x86_64')!

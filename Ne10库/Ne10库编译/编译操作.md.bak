@@ -173,7 +173,7 @@ https://community.arm.com/cn/f/discussions/10409/ne10-armv8/33143
 
 
 
- just  add Ne10.sh 重云
+#Ne10.sh 重云
 
 #!/bin/bash
 export ARCH=arm64
